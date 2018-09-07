@@ -26,7 +26,7 @@ public class LoginPage extends TestBase{
 	WebElement signUpBtn;
 	
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
-	WebElement crmLogo;
+	WebElement orgLogo;
 	
 	//Initializing the Page Objects:
 	public LoginPage(){
@@ -38,8 +38,8 @@ public class LoginPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public boolean validateCRMImage(){
-		return crmLogo.isDisplayed();
+	public boolean validateOrgLogo(){
+		return orgLogo.isDisplayed();
 	}
 	
 	public HomePage login(String un, String pwd){
